@@ -1,0 +1,163 @@
+<html>
+<head>
+    <title>Talent Exchange API Documentation</title>
+</head>
+<body>
+
+    <h1>Talent Exchange API v1.0 - Documentation</h1>
+    
+    <hr>
+    
+    
+    <h2>read</h2>
+    <p>
+        <b>Description</b>
+        <br>
+        Returns all users' info in JSON format.
+    </p>
+    <p>
+        <b>HTTP request</b>
+        <br>
+        <font face="Courier New" color="blue">GET http://localhost/app/api/talent/read.php</font>
+        <br>
+        <i><font color="red">In the case of local API installation, the exact URL may vary - please check your local setup.</font></i>
+    </p><br>
+
+    <p>
+        <b>Description</b>
+        <br>
+        Returns all users' ratings and comments in JSON format.
+    </p>
+    <p>
+        <b>HTTP request</b>
+        <br>
+        <font face="Courier New" color="blue">GET http://localhost/is216/talent/api/talent/readAllRatings.php</font>
+        <br>
+        <br>
+        <i><font color="red">In the case of local API installation, the exact URL may vary - please check your local setup.</font></i>
+    </p>
+    
+    <hr>
+    
+    <h2>read one</h2>
+    <p>
+        <b>Description</b>
+        <br>
+        Given an username, returns matching username's info in JSON format.
+    </p>
+    <p>
+        <b>HTTP request</b>
+        <br>
+        <font face="Courier New" color="blue">GET http://localhost/is216Project/api/talent/readOne.php?username=selena</font>
+        <br>
+        where <b>username</b> is the <b>username</b> parameter, and<br>
+        selena is the username value.
+        <br>
+        <i><font color="red">In the case of local API installation, the exact URL may vary - please check your local setup.</font></i>
+    </p><br>
+    <p>
+        <b>HTTP request</b>
+        <br>
+        <font face="Courier New" color="blue">GET http://localhost/is216Project/api/talent/readRating.php?username=selena</font>
+        <br>
+        where <b>username</b> is the <b>username</b> parameter, and<br>
+        selena is the username value.
+        <br>
+        <i><font color="red">In the case of local API installation, the exact URL may vary - please check your local setup.</font></i>
+    </p>
+    <hr>
+    
+    <h2>search</h2>
+    <p>
+        <b>Description</b>
+        <br>
+        Returns a collection of stars matching the search query in JSON format.
+    </p>
+    <p>
+        <b>HTTP request</b>
+        <ul>
+            <li>
+                Search all user by <b>Gender</b> && <b>Year of experience</b> && <b>Talent</b>
+                <br>
+                <font face="Courier New" color="blue">GET http://localhost/is216Project/api/talent/search.php?g=m&y=10&t=fishing</font>
+                <br>
+                where <b>g</b> is the <b>gender</b> parameter, <b>y</b> is the year of experience (in range) and<br>
+                f (or F) indicates female<br>
+                m (or M) indicates male
+            </li>
+            
+            <br>
+
+            <li>
+                Search all user by <b>Gender</b> && <b>Year of experience</b>
+                <br>
+                <font face="Courier New" color="blue">GET http://localhost/is216Project/api/talent/search.php?g=m&y=10</font>
+                <br>
+                where <b>g</b> is the <b>gender</b> parameter, and<br>
+                f (or F) indicates female<br>
+                m (or M) indicates male <br>
+                and  <b>y</b> is the year of experience (in range)
+            </li>
+
+            <br>
+
+            <li>
+                Search all user by <b>Gender</b> && <b>Talent</b>
+                <br>
+                <font face="Courier New" color="blue">GET http://localhost/is216Project/api/talent/search.php?y=10&t=fishing</font>
+                <br>
+                where <b>g</b> is the <b>gender</b> parameter, and<br>
+                f (or F) indicates female<br>
+                m (or M) indicates male <br>
+                and  <b>t</b> is the Talent
+            </li>
+
+            <br>
+
+            <li>
+                Search all user by <b>Gender</b> 
+                <br>
+                <font face="Courier New" color="blue">GET http://localhost/is216Project/api/talent/search.php?g=m</font>
+                <br>
+                where <b>g</b> is the <b>gender</b> parameter, and<br>
+                f (or F) indicates female<br>
+                m (or M) indicates male
+            </li>
+
+            <br>
+
+            <li>
+                Search all user by <b>Year of experience</b>
+                <br>
+                <font face="Courier New" color="blue">GET http://localhost/is216Project/api/talent/search.php?y=10</font>
+                <br>
+                where <b>y</b> is the <b>year of experience</b> which is in range, eg. 10 = min 1, max 10 years
+                
+            </li>
+            
+            <br>
+
+            <li>
+                Search all user by <b>Talent</b>
+                <br>
+                <font face="Courier New" color="blue">GET http://localhost/is216Project/api/talent/search.php?t=music</font>
+                <br>
+                where <b>t</b> is the <b>Talent</b>
+                
+            </li>
+            
+
+            <br>
+
+            <li>
+                <i><font color="red">In the case of local API installation, the exact URL may vary - please check your local setup.</font></i>
+            </li>
+        </ul>
+        
+    </p>
+    
+    <hr>
+    
+    <footer>&copy; Copyright 2020 IS216G2T12</footer>
+</body>
+</html>
