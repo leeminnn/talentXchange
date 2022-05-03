@@ -1,6 +1,6 @@
 
 // APIs that we are going to use
-var googleAPIKey = "AIzaSyBs80sM_zNu31Am-DRI6n_sx1b_9CrBrjA"; // Change to your own
+var googleAPIKey = "own-API-key"; // Change to your own
 // var url1 = "REST/carpark.php?action=getNearByCarParks&postCode=";
 // var url2 = "REST/carpark.php?action=getCarParkInfo&cpID=";
 var url3 = "https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&key=" + googleAPIKey;
